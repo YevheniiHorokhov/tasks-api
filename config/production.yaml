@@ -1,0 +1,6 @@
+server:
+  origin: 159.89.4.43
+
+db:
+  synchronize: false
+
