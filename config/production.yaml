@@ -2,5 +2,8 @@ server:
   origin: 159.89.4.43
 
 db:
-  synchronize: true
+  host: 'db-postgres-volarium-space-do-user-8476294-0.b.db.ondigitalocean.com'
+  username: 'doadmin'
+  password: 'du8rrndnuqxikpsw'
+  synchronize: false
 

@@ -2,9 +2,9 @@ server:
   port: 3000
 
 db:
-  host: 'localhost'
-  username: 'postgres'
-  password: 'postgres'
+  host: 'db-postgres-volarium-space-do-user-8476294-0.b.db.ondigitalocean.com'
+  username: 'doadmin'
+  password: 'du8rrndnuqxikpsw'
   synchronize: false
 
 jwt:

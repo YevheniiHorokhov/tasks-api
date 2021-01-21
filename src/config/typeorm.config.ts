@@ -1,5 +1,6 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import * as config from 'config';
+import * as fs from "fs";
 
 const dbConfig = config.get('db');
 
@@ -12,6 +13,10 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   database: process.env.RDS_DB_NAME || dbConfig.database,
   entities: [__dirname + '/../**/*.entity{.ts,.js}'],
   synchronize: process.env.TYPEORM_SYNC || dbConfig.synchronize,
+  ssl: {
+    rejectUnauthorized: false,
+     },
 };
 
+///tasks-api/src/config
 //__dirname + '/../**/*.entity.ts'
